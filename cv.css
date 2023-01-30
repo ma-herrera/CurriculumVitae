@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    transition: 0.3seg;
+}
+
+.marco-circular {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 5vh;
+    background-color: aqua;
+    text-align: center;
+    /* background-size: 40vh 40vh; */
+}
+
+.foto-carnet {
+    background-image: url(./images/Marce6x6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: small;
+}
+
+h1  {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+h2{
+    font-size: 25px;
+    font-weight: 400    ;
+}
+h3 {
+    font-size: 18px;
+    font-weight:300 ;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Comfortaa', cursive;
+}
+
+h4{
+    color: rgb(156, 152, 152);
+}
+
+.logos {
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    max-height: 100vh;
+    display: grid;
+    gap: 5px 5px;
+    grid-template-columns: 100%;
+    /* header nav  main aside footer */
+    grid-template-rows: 180px 0px 1fr 100px 100px;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        "main main main"
+                        "aside aside aside"
+                        "footer footer footer";
+
+    background-image: url("./images/7562.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    grid-area: header;
+    background-color:rgb(165, 188, 211);
+}
+
+nav {
+    grid-area: nav;
+    background-color: bisque;
+}
+
+main {
+    grid-area: main;
+    /* background-color: azure; */
+}
+
+aside {
+    grid-area: aside;
+    background-color: aqua;
+}
+footer {
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+header figure figcaption h5 {
+    text-align: center;
+}
+
+header figure img, header figure figcaption {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        grid-template-areas: "header header header"
+                            "nav nav nav"
+                            "aside main main"
+                            /* "aside aside aside" */
+                            "footer footer footer";
+    }
+}

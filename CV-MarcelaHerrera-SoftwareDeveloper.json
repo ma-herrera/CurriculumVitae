@@ -1,0 +1,137 @@
+{
+    "headerName": "Marcela Alejandra Herrera",
+    "headerDescription": "Análisis y programación - Front End Developer",
+    "contactTitle": "CONTACTO",
+    "contactMobileNumber": "11 59549175 (Móvil)",
+    "contactEmailAddress": "marcelaalejandraherrera@yahoo.com.ar",
+    "contactLinkedin": "www.linkedin.com/in/marcela-alejandra-herrera (LinkedIn)",
+
+    "aptitudes":
+    {
+    "aptitudesTitle": "APTITUDES PRINCIPALES",
+    "aptitudes": ["Trabajo en equipo", "Programación orientada a objetos (POO)", "JavaScript", "C++", "Python", "HTML5", "SQL", "Illustrator", "Photoshop"]
+    },
+
+
+"aboutMeTitle": "EXTRACTO",
+"aboutMeDescription": "Poseo quince años de experiencia en el área de análisis y programación de software. Me retiré en el año 2007 para hacerme cargo de responsabilidades familiares. Ansío reinsertarme en el mundo laboral para lo cual decidí capacitarme en programación orientada a objetos y desarrollo Full Stack con Python.\nTengo para ofrecer la experiencia adquirida a través de los años en cuanto a trabajo en equipo, adaptabilidad a nuevos entornos de trabajo y el compromiso a largo plazo con un proyecto",
+
+"experienceTitle": "EXPERIENCIA",
+"experience": 
+[
+    {
+    "expEmpresa": "Thales",
+    "expCargo": "Analista/Programador", 
+    "expFechas": "septiembre de 2000 - enero de 2007", 
+    "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+    "expDescripcion": "Me desempeñé en el área de sistemas de Movistar. Participé en la migración del sistema de Unifón. Fui responsable del desarrollo y mantenimiento del módulo de Almacenes (stock y ventas de contado)",
+    "expTareasPrincipales": "Análisis técnico de requerimientos, programación, testing técnico y documentación",
+    "expLenguajes": ["C con SQL embebido", "PL/SQL", "Visual Basic"]
+    },
+
+    {
+    "expEmpresa": "Correo Argentino",
+    "expCargo": "Analista/Programador", 
+    "expFechas": "junio de 1999 - septiembre de 2000", 
+    "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+    "expDescripcion": "Trabajé en el desarrollo del sistema de Giros (postales, telegráficos y transferencias Western Union).",
+    "expTareasPrincipales": "Análisis y documentación de requerimientos. Programación backend en C en entorno Unix. Diseño y ejecución del testing técnico. Asistencia a usuarios internos en el diseño y ejecución del testing funcional. Seguimiento de desarrollos realizados por terceros.",
+    "expLenguajes": ["C", "Unix", "Oracle", "SQL"]
+    },
+
+    {
+    "expEmpresa": "Crear Sistemas",
+    "expCargo": "Object Librarian Administrator del sistema One World de J.D.Edwards", 
+    "expFechas": "septiembre de 1998 - mayo de 1999", 
+    "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+    "expDescripcion": "Me desempeñé en el área de tecnología de Shell Capsa. Fui responsable del traspaso de fuentes entre los ambientes de desarrollo, testing y producción.",
+    "expTareasPrincipales": "",
+    "expLenguajes": ["Unix", "Oracle", "SQL"]
+    },
+    
+    {
+    "expEmpresa": "Intersoft S.A.",
+    "expCargo": "Object Librarian Administrator del sistema One World de J.D.Edwards", 
+    "expFechas": "septiembre de 1998 - mayo de 1999", 
+    "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+    "expDescripcion": "Me desempeñé en el área de tecnología de Shell Capsa. Fui responsable del traspaso de fuentes entre los ambientes de desarrollo, testing y producción.",
+    "expTareasPrincipales": "",
+    "expLenguajes": ["Unix", "Oracle", "SQL"]
+    },
+    
+    {
+        "expEmpresa": "Intersoft S.A.",
+        "expCargo": "Programadora", 
+        "expFechas": "enero de 1997 - septiembre de 1998", 
+        "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+        "expDescripcion": "Me desempeñé programando con lenguaje C y las herramientas de Ideafix.",
+        "expTareasPrincipales": "Customización del sistema Denarius (liquidación de sueldos) acorde a las necesidades de los clientes, programación de los módulos estándar del sistema de Recursos Humanos, instalación de actualizaciones en dependencias de los clientes. Algunos de los clientes para los que trabajé: Banco Río, Deutsche Bank, Universidad Austral, Shell, Correo Argentino, Prosegur.",
+        "expLenguajes": [ "C", "Ideafix", "Unix", "SQL"]
+    },
+        
+    {
+        "expEmpresa": "Banco Ciudad de Buenos Aires",
+        "expCargo": "Programadora", 
+        "expFechas": "enero de 1993 - enero de 1997", 
+        "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+        "expDescripcion": "Participé del desarrollo y mantenimiento del sistema de Recaudaciones y de los sistemas de transferencias de Datacash y Newnet.",
+        "expTareasPrincipales": "Programación en COBOL en ambiente mainframe IBM 390. Otras tareas incluyeron la Instalación de software de terceros en las sucursales del banco y la capacitación y soporte a usuarios del sistema de recaudaciones.",
+        "expLenguajes": [ "COBOL", "IBM-389", "Dnix"]
+    },
+
+        
+    {
+        "expEmpresa": "Universidad de Buenos Aires",
+        "expCargo": "Ayudante de segunda", 
+        "expFechas": "julio de 1991 - diciembre de 1992", 
+        "expUbicacion": "Ciudad de Buenos Aires, Argentina",
+        "expDescripcion": "Cátedras: Programación de Computadores I y Matemática Discreta.",
+        "expTareasPrincipales": "",
+        "expLenguajes": []
+    }
+],
+
+"educationTitle": "EDUCACIÓN",
+"education":
+[
+    {
+    "educationSchool": "Universidad de Buenos Aires",
+    "educationDegree": "Ciencias de la Computación - 18 materias aprobadas",
+    "educationDates": "(agosto de 1990 - agosto de 1997)"
+    },
+    {
+    "educationSchool": "Programa Codo A Codo, Gobierno de la Ciudad de Buenos Aires",
+    "educationDegree": "Desarrollador Full Stack Python",
+    "educationDates": "(agosto de 2022 - diciembre de 2022)"
+    },
+    {
+    "educationSchool": "Accenture",
+    "educationDegree": "Cursos de habilidades blandas",
+    "educationDates": "(noviembre de 2022 - noviembre de 2022)"
+    },
+    {
+    "educationSchool": "Universidad de Buenos Aires",
+    "educationDegree": "Inglés Universitario I y II",
+    "educationDates": "(marzo de 1990 - diciembre de 1991)"
+    },
+    {
+    "educationSchool": "Escuela Nacional de cerámica N°1, Buenos Aires, Argentina",
+    "educationDegree": "Técnico en Cerámica Artística",
+    "educationDates": "(marzo de 1988 - noviembre de 1990)"
+    },
+    {
+    "educationSchool": "Escuela Nacional de cerámica N°1, Buenos Aires, Argentina",
+    "educationDegree": "Técnico Superior en Esmaltado sobre metales",
+    "educationDates": "(marzo de 1986 - noviembre de 1987)"
+    }
+],
+
+"langTitle": "IDIOMAS",
+"languages":
+    [
+        {"lang": "Inglés", "level": "intermedio"}
+    ],
+
+"interestsTitle": "INTERESES",
+"interests": ["Fotografía", "Dibujo", "Pintura", "Cerámica", "Diseño Gráfico"]
+}
