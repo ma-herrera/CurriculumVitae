@@ -1,8 +1,11 @@
 {
+
+    /*
     var cvObj;
     function getData(){
         let c="";
-        fetch('./CV-MarcelaHerrera-SoftwareDeveloper.json')
+        // fetch('./CV-MarcelaHerrera-SoftwareDeveloper.json')
+        fetch("https://ma-herrera.github.io/CurriculumVitae/CV-MarcelaHerrera-SoftwareDeveloper.json")
             .then (res => res.json())
             .then(datos=>{
                 c=(JSON.parse(datos));
@@ -11,27 +14,44 @@
     }
 
     cvObj = getData();
+*/
+    //recupero el nodo experiene-list para agregarle tantos items como surjan del objeto JSON
 
-    /*
+    const requestURL = 'https://ma-herrera.github.io/CurriculumVitae/CV-MarcelaHerrera-SoftwareDeveloper.json';
+    const request = new XMLHttpRequest();
 
-    */
-    // let item = ""
-    //recupero el nodo experiene-item
-    var nodo=document.getElementById ("experience-list");
-    let body=document.getElementById("body");
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
 
-    var item;
-    var item_text="";
-    cvObj.experience.forEach(function(item)
+    request.onload = function() {
+        const cvObj = request.response;
+        populateExperience(cvObj);
+        }
+
+
+
+    }
+
+
+    function populateExperience (cvObj)
     {
-        item = document.createElement("li");;
-        item_text = '<h3 id="expEmpresa">' + cvObj.expEmpresa + '</h3><h4 id="expDetail">' + cvObj.expDetail + '</h4>' +
-        '<p id="expDescripcion" class="work-description">' + cvObj.expDescription + '</p>' +
-        '<p id="expTareasPrincipales">' + cvObj.expTareasEspeciales + + '</p>' +
-        '<p id="expLenguajes" class="work-tools">' + cvObj.expLenguajes +'</p>';
-        //crear un item y ponerlo como hijo de experience-list
+        const nodo=document.getElementById ("experience-list");
+        let aux_text="";
+        var item;
+        (cvObj["experience"]).forEach(function(objItem)
+        {
+            item = document.createElement("li");
+            aux_text = '<h3 id="expEmpresa">' + objItem["expEmpresa"] + '</h3><h4 id="expDetail">' + objItem["expCargo"] + ', ' + objItem["expFechas"]  + ', ' ;
+            aux_text += objItem["expUbicacion"] + '</h4>';
+            aux_text += '<p id="expDescripcion" class="work-description">' + objItem["expDescripcion"] + '</p>';
+            if (objItem["expTareasPrincipales"] != "")
+                aux_text += '<p id="expTareasPrincipales">Tareas principales: ' + objItem["expTareasPrincipales"] + '</p>';
+            if (objItem["expLenguajes"] != "")
+                aux_text += '<p id="expLenguajes" class="work-tools"> Herramientas y lenguajes: ' + objItem["expLenguajes"] +'</p>';
+            //crear un item y ponerlo como hijo de experience-list
 
-        item.innerText(item_text);
-        nodo.appendChild(item);
-    });
-}
+            item.innerHTML =aux_text;
+            nodo.appendChild(item);
+        });
+    }
