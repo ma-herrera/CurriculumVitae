@@ -50,16 +50,6 @@
     },
     
     {
-    "expEmpresa": "Intersoft S.A.",
-    "expCargo": "Object Librarian Administrator del sistema One World de J.D.Edwards", 
-    "expFechas": "septiembre de 1998 - mayo de 1999", 
-    "expUbicacion": "Ciudad de Buenos Aires, Argentina",
-    "expDescripcion": "Me desempeñé en el área de tecnología de Shell Capsa. Fui responsable del traspaso de fuentes entre los ambientes de desarrollo, testing y producción.",
-    "expTareasPrincipales": "",
-    "expLenguajes": ["Unix", "Oracle", "SQL"]
-    },
-    
-    {
         "expEmpresa": "Intersoft S.A.",
         "expCargo": "Programadora", 
         "expFechas": "enero de 1997 - septiembre de 1998", 
@@ -78,7 +68,6 @@
         "expTareasPrincipales": "Programación en COBOL en ambiente mainframe IBM 390. Otras tareas incluyeron la Instalación de software de terceros en las sucursales del banco y la capacitación y soporte a usuarios del sistema de recaudaciones.",
         "expLenguajes": [ "COBOL", "IBM-389", "Dnix"]
     },
-
         
     {
         "expEmpresa": "Universidad de Buenos Aires",
