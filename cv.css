@@ -2,6 +2,12 @@
     box-sizing: border-box;
     transition: 0.3seg;
     /* color: white; */
+    /* margin: 0; */
+}
+
+html {
+    max-width: 1200px;
+    margin: 0;
 }
 
 .marco-circular {
@@ -10,7 +16,6 @@
     border-radius: 5vh;
     background-color: aqua;
     text-align: center;
-    /* background-size: 40vh 40vh; */
 }
 
 .foto-carnet {
@@ -58,8 +63,9 @@ h4{
 }
 
 body {
-    margin: auto;
-    max-width: 1200px;
+    /* margin: auto; */
+    /* padding: 0 20px 0 20px; */
+    /* max-width: 1200px; */
     max-height: 100vh;
     display: grid;
     gap: 5px 5px;
