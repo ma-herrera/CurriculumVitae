@@ -23,7 +23,14 @@
     <!-- Iconos -->
 
 </head>
-<body id="body" class="grid">
+<body>
+    <section id="video_sect">
+        <video src="./videos/Tecnologia.mp4"  autoplay="true" muted="true" loop="true" poster="./images/Tecnologia_Moment.jpg" >
+
+        </video>
+    </section>
+
+    <section class="grilla grid">
     <header>
         <figure>
             <img class="marco-circular" src="./images/Marce6x6.jpg" alt="foto retrato de Marcela Herrera">
@@ -46,7 +53,7 @@
     </aside>
 
     <main>
-        <section class="sobre-mi">
+        <section class="sobre-mi"> 
             <h2>Sobre mí</h2>
             <p>Poseo quince años de experiencia en el área de análisis y programación de software. Me retiré en el año 2007 para hacerme cargo de responsabilidades familiares. Ansío reinsertarme en el mundo laboral para lo cual decidí capacitarme en programación orientada a objetos y desarrollo Full Stack con Python.
                 Tengo para ofrecer la experiencia adquirida a través de los años en cuanto a trabajo en equipo, adaptabilidad a nuevos entornos de trabajo y el compromiso a largo plazo con un proyecto.
@@ -54,7 +61,7 @@
         </section>
 
         <!-- <section class="grid"> -->
-            <section class="work-experience">
+            <section class="work-experience whiteBackground">
                 <h2>Experiencia laboral</h1>
                 <ul id="experience-list" class="experience-list">
                     <!-- <li id="experience-item" class="experience-item">
@@ -67,13 +74,13 @@
                 </ul>
             </section>
         <!-- </section> -->
-        <section class="education">
+        <section class="education whiteBackground">
             <h2>Educación</h2>
-            <ul>
-            <li class="education-item">
+            <ul id="education-list">
+            <!-- <li class="education-item">
                 <h3>Universidad de Buenos Aires</h3>
                 <h4>Ciencias de la Computación - 18 materias aprobadas - (agosto de 1990 - agosto de 1997)</h4>
-            </li>
+            </li> -->
         </ul>
         </section>
 
@@ -114,5 +121,6 @@
     </footer>
 
     <script src="./cv.js"></script>
+</section>
 </body>
 </html>
