@@ -24,26 +24,42 @@
 
 </head>
 <body>
+
+    <!-- Fondo para todo el documento -->
     <section id="video_sect">
-        <video src="./videos/Tecnologia.mp4"  autoplay="true" muted="true" loop="true" poster="./images/Tecnologia_Moment.jpg" >
+        <video src="./videos/Tecnologia1920x1080.mp4"  autoplay="true" muted="true" loop="true" poster="./images/Tecnologia1920x1080_Moment.jpg" >
 
         </video>
     </section>
 
-    <section class="grilla grid">
+
+        <section>
     <header>
-        <figure>
-            <img class="marco-circular" src="./images/Marce6x6.jpg" alt="foto retrato de Marcela Herrera">
-            <figcaption><span><h1 id="headerName">Marcela Herrera</h1></span><h5 id="headerDescription">Software developer</h5></figcaption>
-        </figure>
+        <nav>
+            <figure id="imagenPresentacion">
+                <img class="marco-circular" src="./images/Marce6x6.jpg" alt="foto retrato de Marcela Herrera">
+            </figure>
+            <ul>
+                <li><a href="#about-me">Sobre mí</a></li>
+                <li><a href="#work-experience">Experiencia</a></li>
+                <li><a href="#tools">Lenguajes y herramientas</a></li>
+                <li><a href="#education">Educación</a></li>
+                <!-- <li><a href="#idiomas">Idiomas</a></li> -->
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            
+            <!-- <p>pepe</p> -->
+        </nav>
+
+        <section id="portada">
+                <h1 id="headerName">Marcela Herrera</h1>
+                <h5 id="headerDescription">Software developer</h5>
+        </section>
+
         <!-- <div class="marco-circular foto-carnet"> -->
         <!-- </div> -->
         <a href="download/cv-MarcelaHerrera-SoftwareDeveloper.pdf" download="CV-MarcelaHerrera-SoftwareDeveloper.pdf">Descargar como PDF</a>
     </header>
-
-    <nav>
-
-    </nav>
 
     <aside>
         <section class="contact">
@@ -53,7 +69,7 @@
     </aside>
 
     <main>
-        <section class="sobre-mi"> 
+        <section id="about-me"> 
             <h2>Sobre mí</h2>
             <p>Poseo quince años de experiencia en el área de análisis y programación de software. Me retiré en el año 2007 para hacerme cargo de responsabilidades familiares. Ansío reinsertarme en el mundo laboral para lo cual decidí capacitarme en programación orientada a objetos y desarrollo Full Stack con Python.
                 Tengo para ofrecer la experiencia adquirida a través de los años en cuanto a trabajo en equipo, adaptabilidad a nuevos entornos de trabajo y el compromiso a largo plazo con un proyecto.
@@ -61,7 +77,7 @@
         </section>
 
         <!-- <section class="grid"> -->
-            <section class="work-experience whiteBackground">
+            <section id="work-experience" class="work-experience whiteBackground">
                 <h2>Experiencia laboral</h1>
                 <ul id="experience-list" class="experience-list">
                     <!-- <li id="experience-item" class="experience-item">
@@ -74,7 +90,7 @@
                 </ul>
             </section>
         <!-- </section> -->
-        <section class="education whiteBackground">
+        <section id="education" class="education whiteBackground">
             <h2>Educación</h2>
             <ul id="education-list">
             <!-- <li class="education-item">
@@ -84,7 +100,7 @@
         </ul>
         </section>
 
-        <section class="tools">
+        <section id="tools" class="tools">
             <h2>Lenguajes de Programación y Herramientas de Desarrollo</h2>
             <ul>
                 <!-- <li>HTML5</li>
@@ -100,7 +116,7 @@
             </ul>
         </section>
 
-        <section class="idiomas">
+        <section id="idiomas" class="idiomas">
             <h2>Idiomas</h2>
             <ul>
                 <li>
@@ -109,7 +125,7 @@
             </ul>
         </section>
 
-        <section class="form-contacto">
+        <section id="contact" class="contact-form">
             <h2>Formulario de contacto</h2>            
             <form action="">
             </form>
