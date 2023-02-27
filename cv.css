@@ -2,10 +2,96 @@
     box-sizing: border-box;
     transition: 0.3seg;
     margin: 0%;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 html {
     max-width: 1200px;
+}
+
+p {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1em;
+}
+
+h1  {
+    font-size: 8em;
+    font-weight: 400;
+    color: firebrick;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.8em;
+    font-weight: 400;
+    color: firebrick;
+    padding: 1em 0 0 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgb(11, 2, 92);
+    padding: 0.7em 0  0;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Comfortaa', cursive;
+}
+
+h4{
+    color: rgb(156, 152, 152);
+}
+
+#expDetail {
+    padding: 0 0 0.3em 0;
+}
+.logos {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* video de fondo*/
+#video_background{
+    z-index: -2;
+    background-position: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.layer1 {
+    z-index: 1;
+}
+
+.layertop {
+    z-index: 10;
+}
+
+.contact {
+vertical-align: middle;
+}
+
+.relative {
+    position: relative;
+}
+
+header {
+    /* padding: 2px; */
+    width: 100%;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: blue;
+    z-index: 2;
 }
 
 .marco-circular {
@@ -18,117 +104,70 @@ html {
 
 .foto-carnet {
     background-image: url(./images/Marce6x6.jpg);
-    /* back */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-p {
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 1em;
-}
-
-h1  {
-    font-size: 8em;
-    font-weight: 400;
-    color: firebrick;
-}
-
-
-h2{
-    font-size: 1.8em;
-    font-weight: 400;
-    color: firebrick;
-}
-
-h3 {
-    font-size: 1.4em;
-    font-weight:400 ;
-    color: rgb(11, 2, 92);
-}
-
-h1, h2, h3, h5 {
-    font-family: 'Comfortaa', cursive;
-}
-
-h4{
-    color: rgb(156, 152, 152);
-}
-
-.logos {
-    width: 40px;
-    height: 40px;
-}
-
-/* video de fondo*/
-#video_sect{
-    z-index: -2;
-    background-position: center;
-    left: 0;
-    top: 0;
-    position: fixed;
-}
-
-/* header nav  main aside footer */
-/* .grilla {
-
-    max-height: 300vh;
-    display: grid;
-    gap: 5px 5px;
-    grid-template-columns: 100%;
-    grid-template-rows: 100vh 0px 1fr 100px 100px;
-    grid-template-rows: 3fr 0px 1fr 100px 100px;
-    grid-template-areas: "header header header"
-                        "header header header"
-                        "nav nav nav"
-                        "main main main"
-                        "aside aside aside"
-                        "footer footer footer";
-
-}
-
-.grilla{
-    z-index: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
-
-header {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: blue;
-}
-
-#imagenPresentacion{
-    display: flex;
-    flex-direction: column;
+#foto{
+    display: inline-block;
 }
 
 nav {
-    /* grid-area: nav; */
+    display: flex;
     background-color: bisque;
     width: 100%;
-    /* align-items: center;
-    justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
 }
 
-#portada {
-    padding: 0 40px;
+nav ul {
     display: flex;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center;
-    /* width: 100vw; */
-    /* width: 80%; */
-    justify-content: center;
+    column-gap: 10px;
+    justify-content: space-between;
 }
 
-/* formato de links */
+#downloadpdf {
+    width: 20px;
+    height: 20px;
+    /* color: tomato; */
+}
+/* ********************************** */
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personal-info {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 6em;
+    /* z-index: 1; */
+    align-items: center;
+    justify-self: center;
+
+}
+
+#portada {
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* #portada:hover {
+    display: none;
+    transition: 3s;
+    z-index: -4 ;
+} */
+
+
 a {
     color: coral;
 }
@@ -137,46 +176,12 @@ a:hover {
     color: brown;
 }
 
-main {
-    /* grid-area: main; */
-    /* background-color: azure; */
-}
 
-aside {
-    /* grid-area: aside; */
+
+#headerName{
     /* background-color: aqua; */
-}
-footer {
-    /* grid-area: footer; */
-    /* background-color: aquamarine; */
-}
-
-
-/* figcaption h5 */
-#headerName{
-    background-color: aqua;
     display: inline-block;
     padding: 5%;
-    /* width: 5em; */
-}
-
-#headerDescription {
-    font-size: 1.5em;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    text-align:center;
-    background-color: rgb(74, 167, 167);
-    display: inline-block;
-    width: fit-content;
-}
-
-
-/* porcentajes */
-#headerName{
-    background-color: aqua;
-    display: inline-block;
-    padding: 5%;
-    /* width: 5em; */
     font-size: 8rem;
 }
 
@@ -185,11 +190,12 @@ footer {
     writing-mode: vertical-rl;
     text-orientation: sideways;
     text-align:center;
-    background-color: rgb(74, 167, 167);
-    display: inline-block;
-    width: fit-content;
+    /* background-color: rgb(74, 167, 167); */
+    /* border: 1px solid red; */
+    background-color: black;
+    color: white;
+    padding: 0.3em;
 }
-
 
 
 header figure img {
@@ -197,20 +203,48 @@ header figure img {
     vertical-align: middle;
 }
 
+#about-me {
+    display: none;
+/* visibility: hidden; */
+transition: 5s;
+/* z-index: 3; */
+position: absolute;
+left: 0;
+top: 0;
+}
 
+#about-me {
+    /* display: none; */
+/* visibility: hidden; */
+transition: 5s;
+z-index: 0;
+position: fixed;
+left: 0;
+top: 0;
+}
+
+.list {
+    padding: 2em;
+}
 
 .whiteBackground {
     background-color: rgb(188, 227, 245);
 }
 
+.centro {
+    align-self: space-around;
+}
+
+main {
+    /* position: sticky; */
+    position: relative;
+    top: 80px;
+    margin: auto;
+}
+
 
 @media (min-width: 600px) and (max-width: 1000px) {
     main {
-        grid-template-areas: "header header header"
-        "header header header"
-                            "nav nav nav"
-                            "aside main main"
-                            /* "aside aside aside" */
-                            "footer footer footer";
+
     }
 }

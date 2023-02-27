@@ -9,7 +9,7 @@
     <!-- <link rel="shortcut icon" href="./Images/Recurso 4.svg" type="image/x-icon"> -->
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="cv1.css">
 
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,63 +23,61 @@
     <!-- Iconos -->
 
 </head>
+
+
 <body>
 
     <!-- Fondo para todo el documento -->
-    <section id="video_sect">
+    <section id="video_background">
         <video src="./videos/Tecnologia1920x1080.mp4"  autoplay="true" muted="true" loop="true" poster="./images/Tecnologia1920x1080_Moment.jpg" >
 
         </video>
     </section>
 
 
-        <section>
-    <header>
+    <header class="layertop">
         <nav>
-            <figure id="imagenPresentacion">
+            <figure id="foto">
                 <img class="marco-circular" src="./images/Marce6x6.jpg" alt="foto retrato de Marcela Herrera">
+                <!-- <img id="downloadpdf" src="./icons/download-icon.svg" alt="icono de descarga"> -->
             </figure>
             <ul>
-                <li><a href="#about-me">Sobre mí</a></li>
+                <!-- <li><a href="#about-me">Sobre mí</a></li> -->
                 <li><a href="#work-experience">Experiencia</a></li>
                 <li><a href="#tools">Lenguajes y herramientas</a></li>
                 <li><a href="#education">Educación</a></li>
                 <!-- <li><a href="#idiomas">Idiomas</a></li> -->
                 <li><a href="#contact">Contacto</a></li>
+                <!-- <li>                <img id="downloadpdf" src="./icons/download-icon.svg" alt="icono de descarga"></li> -->
             </ul>
-            
+            <a href="download/cv-MarcelaHerrera-SoftwareDeveloper.pdf" download="CV-MarcelaHerrera-SoftwareDeveloper.pdf"><img id="downloadpdf" src="./icons/download-icon.svg" alt="icono de descarga"></a>
             <!-- <p>pepe</p> -->
         </nav>
-
-        <section id="portada">
-                <h1 id="headerName">Marcela Herrera</h1>
-                <h5 id="headerDescription">Software developer</h5>
-        </section>
-
-        <!-- <div class="marco-circular foto-carnet"> -->
-        <!-- </div> -->
-        <a href="download/cv-MarcelaHerrera-SoftwareDeveloper.pdf" download="CV-MarcelaHerrera-SoftwareDeveloper.pdf">Descargar como PDF</a>
     </header>
 
-    <aside>
-        <section class="contact">
-            <p><a title="linkedin" href="https://www.linkedin.com/in/marcela-alejandra-herrera" target="_blank"><img class="logos" src="./icons/linkedin-icono-210px210px-72ppp.svg" alt="logo de linkedin"><span>marcela-alejandra-herrera</span></a></p>
-            <p><a><img  class="logos" src="./icons/mail-icono-210px210px-72ppp.svg" alt="logo de e-mail"><span>marcelaalejandraherrera@yahoo.com.ar</span></a></p>  
-        </section>
-    </aside>
+<!-- ----------------------------------------------------------- -->
+    <section class="contenido layer1">
+        <div id="personal-info" class="layer1">
+            <a id="portada">
+                    <h1 id="headerName">Marcela Herrera</h1>
+                    <div><h5 id="headerDescription">Software developer</h5></div>
+            </a>
+<!-- 
+            <section id="about-me"> 
+                <h2>Sobre mí</h2>
+                <p>Poseo quince años de experiencia en el área de análisis y programación de software. Me retiré en el año 2007 para hacerme cargo de responsabilidades familiares. Ansío reinsertarme en el mundo laboral para lo cual decidí capacitarme en programación orientada a objetos y desarrollo Full Stack con Python.
+                    Tengo para ofrecer la experiencia adquirida a través de los años en cuanto a trabajo en equipo, adaptabilidad a nuevos entornos de trabajo y el compromiso a largo plazo con un proyecto.
+                </p>
+            </section> -->
+        </div>
+    </section>
 
-    <main>
-        <section id="about-me"> 
-            <h2>Sobre mí</h2>
-            <p>Poseo quince años de experiencia en el área de análisis y programación de software. Me retiré en el año 2007 para hacerme cargo de responsabilidades familiares. Ansío reinsertarme en el mundo laboral para lo cual decidí capacitarme en programación orientada a objetos y desarrollo Full Stack con Python.
-                Tengo para ofrecer la experiencia adquirida a través de los años en cuanto a trabajo en equipo, adaptabilidad a nuevos entornos de trabajo y el compromiso a largo plazo con un proyecto.
-            </p>
-        </section>
 
-        <!-- <section class="grid"> -->
-            <section id="work-experience" class="work-experience whiteBackground">
-                <h2>Experiencia laboral</h1>
-                <ul id="experience-list" class="experience-list">
+    <section>
+        <main>
+            <section id="work-experience" class="whiteBackground">
+                <h2>Experiencia laboral</h2>
+                <ul id="experience-list" class="list">
                     <!-- <li id="experience-item" class="experience-item">
                         <h3 id="expEmpresa">Thales</h3>
                         <h4 id="expDetail">Analista/Programador, septiembre de 2000 - enero de 2007, Ciudad de Buenos Aires, Argentina.</h4>
@@ -89,54 +87,61 @@
                     </li> -->
                 </ul>
             </section>
-        <!-- </section> -->
-        <section id="education" class="education whiteBackground">
-            <h2>Educación</h2>
-            <ul id="education-list">
-            <!-- <li class="education-item">
-                <h3>Universidad de Buenos Aires</h3>
-                <h4>Ciencias de la Computación - 18 materias aprobadas - (agosto de 1990 - agosto de 1997)</h4>
-            </li> -->
-        </ul>
-        </section>
 
-        <section id="tools" class="tools">
-            <h2>Lenguajes de Programación y Herramientas de Desarrollo</h2>
-            <ul>
-                <!-- <li>HTML5</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>C/C++</li>
-                <li>SQL</li>
-                <li>Javascript</li>
-                <li>Git/Github</li>
-                <li>Programación funcional (Haskell)</li>
-                <li>Photoshop</li>
-                <li>Adobe Illustrator</li> -->
+            <section id="education">
+                <h2>Educación</h2>
+                <ul id="education-list" class="list">
+                <!-- <li class="education-item">
+                    <h3>Universidad de Buenos Aires</h3>
+                    <h4>Ciencias de la Computación - 18 materias aprobadas - (agosto de 1990 - agosto de 1997)</h4>
+                </li> -->
             </ul>
-        </section>
+            </section>
 
-        <section id="idiomas" class="idiomas">
-            <h2>Idiomas</h2>
-            <ul>
-                <li>
-                    <h3>Inglés: nivel intermedio</h3>
-                </li>
-            </ul>
-        </section>
+            <section id="tools">
+                <h2>Lenguajes de Programación y Herramientas de Desarrollo</h2>
+                <ul class="list">
+                    <li><h3>HTML5</h3></li>
+                    <li><h3>CSS</h3></li>
+                    <li><h3>Javascript</h3></li>
+                    <li><h3>C/C++</h3></li>
+                    <li><h3>SQL</h3></li>
+                    <li><h3>Javascript</h3></li>
+                    <li><h3>Git/Github</h3></li>
+                    <li><h3>Programación funcional (Haskell)</h3></li>
+                    <li><h3>Photoshop</h3></li>
+                    <li><h3> Illustrator</h3></li>
+                </ul>
+            </section>
 
-        <section id="contact" class="contact-form">
-            <h2>Formulario de contacto</h2>            
-            <form action="">
-            </form>
-        </section>
-    </main>
+            <section id="idiomas" class="idiomas">
+                <h2>Idiomas</h2>
+                <ul class="list">
+                    <li>
+                        <h3>Inglés: nivel intermedio</h3>
+                    </li>
+                </ul>
+            </section>
 
-    <footer>
+            <section id="contact" class="contact-form">
+                <h2>Formulario de contacto</h2>            
+                <form action="">
+                </form>
+            </section>
+        </main>
+    </section>
 
-    </footer>
-
+        <!-- end "not background" -->
+    <!-- </section> -->
     <script src="./cv.js"></script>
-</section>
 </body>
 </html>
+
+
+<!-- 
+<aside>
+    <section class="contact">
+        <p><a title="linkedin" href="https://www.linkedin.com/in/marcela-alejandra-herrera" target="_blank"><img class="logos" src="./icons/linkedin-icono-210px210px-72ppp.svg" alt="logo de linkedin"><span>marcela-alejandra-herrera</span></a></p>
+        <p><a><img  class="logos" src="./icons/mail-icono-210px210px-72ppp.svg" alt="logo de e-mail"><span>marcelaalejandraherrera@yahoo.com.ar</span></a></p>  
+    </section>
+</aside> -->
