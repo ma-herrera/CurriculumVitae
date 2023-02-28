@@ -3,14 +3,34 @@
     transition: 0.3seg;
     margin: 0%;
     padding: 0;
+    /* max-width: 1890px;
+    min-width: 440px; */
+}
+
+:root {
+    --social-icon-height: 2rem;
+    --social-icon-margin: 0rem 1rem 1rem 1rem;
+    --link-color: hsl(29, 73%, 61%);
+    --hover-link-color: hsl(10, 73%, 61%);
+    --active-link-color: hsl(10, 82%, 22%);
+}
+
+html {
+    max-width: 1920px;
+    min-width: 440px;
 }
 
 li {
     list-style-type: none;
 }
 
-html {
+
+.full {
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 
 p {
@@ -82,12 +102,15 @@ vertical-align: middle;
 }
 
 header {
+    max-width: 1920px;
+}
+
+header {
     /* padding: 2px; */
     width: 100%;
     height: 6em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 100px;
+
     position: fixed;
     top: 0;
     background-color: blue;
@@ -97,6 +120,8 @@ header {
 .marco-circular {
     height: 10vh;
     width: 10vh;
+    height: 80px;
+    width: 80px;
     border-radius: 5vh;
     background-color: aqua;
     text-align: center;
@@ -113,25 +138,12 @@ header {
     display: inline-block;
 }
 
-nav {
-    display: flex;
-    background-color: bisque;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
+/* ********************************** */
 
-nav ul {
-    display: flex;
-    column-gap: 10px;
-    justify-content: space-between;
-}
 
 #downloadpdf {
     width: 20px;
     height: 20px;
-    /* color: tomato; */
 }
 /* ********************************** */
 
@@ -161,22 +173,13 @@ nav ul {
     align-items: center;
 }
 
-/* #portada:hover {
-    display: none;
-    transition: 3s;
-    z-index: -4 ;
-} */
-
-
 a {
-    color: coral;
+    color: var(--link-color);
 }
 
 a:hover {
-    color: brown;
+    color: var(--hover-link-color);
 }
-
-
 
 #headerName{
     /* background-color: aqua; */
@@ -227,7 +230,7 @@ top: 0;
     padding: 2em;
 }
 
-.whiteBackground {
+.colorBackground {
     background-color: rgb(188, 227, 245);
 }
 
@@ -243,7 +246,154 @@ main {
 }
 
 
-@media (min-width: 600px) and (max-width: 1000px) {
+
+
+/* iconos de redes sociales */
+/* .social-icons a img { */
+.contact__social-icons {
+    height: var(--social-icon-height);
+    margin: var(--social-icon-margin);
+}
+
+nav a, nav .material-symbols-outlined {
+    color: var(--link-color);
+    font-size: 1.3rem;    
+}
+
+
+/************************ Menu hamburguesa ***************************/
+.btn-hamburguesa {
+    color: var(--link-color);
+    padding: 3px;
+    border: none;
+    background-color: var(--banner-bg-color); 
+    transition-duration: 0.3s;
+}
+
+.btn-hamburguesa i {
+    font-size: 60px;
+}
+
+.btn-hamburguesa:hover {
+    color: var(--hover-link-color);
+    cursor: pointer;
+}
+
+
+/* FORMATO POR DEFAULT: CELULAR -  */
+
+ 
+    /* ocultamos el menú de navegación a la derecha de la ventana */
+    .navul{
+        width: 40%;
+        top: 100px;
+        position: fixed;
+        right: -100%;
+        /*right: 0%;  /* para probar lo pongo visible */
+        z-index: 2;
+        transition-duration: 0.3s;
+        background-color: var(--menu-bg-color);
+        background-color: rgb(95, 133, 120);
+        font-size: 2rem;
+        /* vertical-align: middle; */
+
+    /* .menu__links { */
+        flex-direction: column;
+        padding: 10px;
+        /* width: 100%; */
+        max-width: 40vw;
+        justify-content: center;
+        height: fit-content;
+    }
+   
+    .navul.mostrar {
+        right: 0;
+        transition-duration: 0.3s;
+    }
+    
+
+/* 
+@media (max-width: 600px) {
+    main {
+
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767.99px) {
+    main {
+
+    } 
+} */
+
+@media (min-width: 768px) {
+
+    .btn-hamburguesa {
+        display: none;
+    }   
+
+    header{
+        width: 100%;
+        height: 100px;
+        /* height: 12vh; */
+        /* height: 100px; */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        position: fixed;
+        top: 0;
+        left: 0%;
+        background-color: blue;
+        z-index: 2;
+        }	
+
+
+        /* El header solo contiene al nav */
+        /* el nav contiene la foto, los links y el icono de descarga de PDF */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(126, 197, 108);
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        align-items: center;
+        /* padding: 20px 40px; */
+    }
+    
+    .navul {
+        max-width: 90vw;
+        width: fit-content;
+
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: space-between;
+        /* position: relative; */
+
+        /* justify-self: center; */
+
+        /* position: inherit; */
+        /* position: absolute; */
+        /* position: relative; */
+        position: fixed;
+        top: 0px;
+        left: 100px;
+        /* right: 5%; */
+        /* top: 2em; */
+        column-gap: 0.8rem;
+        background-color: bisque;
+        padding: 10px;
+        padding-right: 0;
+        /* align-self: center; */
+        /* height: 100%; */
+        height: fit-content;
+        vertical-align: middle;
+    }
+
+
     main {
 
     }
