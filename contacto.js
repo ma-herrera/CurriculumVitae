@@ -66,9 +66,10 @@ async function handleSubmit(event) {
     var data = new FormData(form); 
     
   // PARA TESTEAR DEJAR ESTA LINEA COMENTADA (para no gastar los mails gratis de formspree):
-    // await fetch("https://formspree.io/f/xgeqyddv", {  
+  
+    await fetch("https://formspree.io/f/xyyajenj", {  
   //PARA PRODUCCION DESCOMENTAR LA LINEA DE ARRIBA Y COMENTAR LA DE ABAJO:
-    await fetch("", {  
+    //await fetch("", {  
       /*
     action: formspree...
     method: post
@@ -82,7 +83,7 @@ async function handleSubmit(event) {
       }
     }).then(response => {
       if (response.ok) {
-          status.innerHTML = "Gracias por contactarnos! Te responderemos a la brevedad."
+          status.innerHTML = "Gracias por contactarme! Te responderé a la brevedad."
         form.reset()  /* limpiar los campos del formulario */
       } else {
         response.json().then(data => {
