@@ -25,7 +25,7 @@
             menuPpal.classList.remove('mostrar');
 
     }else{
-        menu.addEventListener('click', ()=> menuPpal.classList.toggle('mostrar'));            
+        // menu.addEventListener('click', ()=> menuPpal.classList.toggle('mostrar'));            
         menu.addEventListener('click', addMostrar);
         // addClick();
     }
@@ -38,7 +38,6 @@
         }else{
             // menu.addEventListener('click', ()=> menuPpal.classList.toggle('mostrar'));            
             menu.addEventListener('click', addMostrar);
-            // addClick();
         }
     });
 

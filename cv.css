@@ -11,7 +11,7 @@
     --social-icon-height: 2rem;
     --social-icon-margin: 0rem 1rem 1rem 1rem;
     --link-color: hsl(29, 73%, 61%);
-    --hover-link-color: hsl(10, 73%, 61%);
+    --hover-link-color: hsl(10, 94%, 51%);
     --active-link-color: hsl(10, 82%, 22%);
 }
 
@@ -106,9 +106,8 @@ header {
 }
 
 header {
-    /* padding: 2px; */
+    padding: 2px;
     width: 100%;
-    height: 6em;
     height: 100px;
 
     position: fixed;
@@ -118,11 +117,10 @@ header {
 }
 
 .marco-circular {
-    height: 10vh;
-    width: 10vh;
-    height: 80px;
-    width: 80px;
-    border-radius: 5vh;
+
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
     background-color: aqua;
     text-align: center;
 }
@@ -142,8 +140,8 @@ header {
 
 
 #downloadpdf {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 /* ********************************** */
 
@@ -175,6 +173,7 @@ header {
 
 a {
     color: var(--link-color);
+    text-decoration: none;
 }
 
 a:hover {
@@ -258,6 +257,7 @@ main {
 nav a, nav .material-symbols-outlined {
     color: var(--link-color);
     font-size: 1.3rem;    
+    text-decoration: none;
 }
 
 
@@ -281,7 +281,20 @@ nav a, nav .material-symbols-outlined {
 
 
 /* FORMATO POR DEFAULT: CELULAR -  */
-
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 20px;
+    vertical-align: middle;
+}
  
     /* ocultamos el menú de navegación a la derecha de la ventana */
     .navul{
@@ -295,9 +308,7 @@ nav a, nav .material-symbols-outlined {
         background-color: var(--menu-bg-color);
         background-color: rgb(95, 133, 120);
         font-size: 2rem;
-        /* vertical-align: middle; */
 
-    /* .menu__links { */
         flex-direction: column;
         padding: 10px;
         /* width: 100%; */
@@ -307,7 +318,7 @@ nav a, nav .material-symbols-outlined {
     }
    
     .navul.mostrar {
-        right: 0;
+        right: 0%;
         transition-duration: 0.3s;
     }
     
@@ -334,17 +345,14 @@ nav a, nav .material-symbols-outlined {
     header{
         width: 100%;
         height: 100px;
-        /* height: 12vh; */
-        /* height: 100px; */
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
+        padding: 2px;
+
         position: fixed;
         top: 0;
         left: 0%;
         background-color: blue;
         z-index: 2;
-        }	
+    }	
 
 
         /* El header solo contiene al nav */
@@ -356,11 +364,12 @@ nav a, nav .material-symbols-outlined {
 width: 100%;
         display: flex;
         flex-direction: row;
-        background-color: rgb(126, 197, 108);
+        background-color: bisque;
         justify-content: space-between;
         /* justify-content: space-around; */
         align-items: center;
-        /* padding: 20px 40px; */
+        padding: 20px;
+        vertical-align: middle;
     }
     
     .navul {
@@ -371,24 +380,15 @@ width: 100%;
         flex-direction: row;
         column-gap: 10px;
         justify-content: space-between;
-        /* position: relative; */
-
-        /* justify-self: center; */
-
-        /* position: inherit; */
-        /* position: absolute; */
-        /* position: relative; */
         position: fixed;
-        top: 0px;
-        left: 100px;
+        top: 20px;
+        left: 120px;
         /* right: 5%; */
         /* top: 2em; */
         column-gap: 0.8rem;
         background-color: bisque;
         padding: 10px;
         padding-right: 0;
-        /* align-self: center; */
-        /* height: 100%; */
         height: fit-content;
         vertical-align: middle;
     }
